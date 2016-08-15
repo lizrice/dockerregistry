@@ -33,22 +33,38 @@ def getLayers(org, image, tag):
     token = getDockerAuth(org, image)
     m = reqWithAuth(url, token, org, image)
     manifest = m.json()
-    print("fsLayers from {0}/{1}:{2}".format(org, image, tag))
-    pprint.pprint(manifest["fsLayers"])
+    print("Manifest from {0}/{1}:{2}".format(org, image, tag))
+    pprint.pprint(manifest)
+    # print("fsLayers from {0}/{1}:{2}".format(org, image, tag))
+    # pprint.pprint(manifest["fsLayers"])
 
+    print("Headers from {0}/{1}:{2}".format(org, image, tag))
+    pprint.pprint(m.headers)
 
-    return manifest["fsLayers"]
+    # print("history from {0}/{1}:{2}".format(org, image, tag))
+    # for h in manifest["history"]:
+    #     # pprint.pprint(h["v1Compatibility"])
+    #     j = json.loads(h["v1Compatibility"])
+    #     s = " id: " + j['id']
+    #     if 'parent' in j:
+    #         s = s + " parent: " + j['parent']
+    #     print(s)
+    #     if 'config' in j:
+    #         print(" config / Image: " + j['config']['Image']) 
+    #     if 'container' in j:
+    #         print(" container: " + j['container'])
+    #     if 'container_config' in j:
+    #         print(" container_config / Cmd: {0}".format(j['container_config']['Cmd']))
+    # return manifest["fsLayers"]
 
 if __name__ == "__main__":
-    org = "library"
-    image = "alpine"
-    tag = "3.3"
-    layers = getLayers(org, image, tag)
-    print("=================================")
+    from optparse import OptionParser
 
-    org = "lizrice"
-    image = "imagetest"
-    tag = "latest"
-    layers = getLayers(org, image, tag)
+    parser = OptionParser()
+    parser.add_option("-o", "--org", dest="org", help="organisation (from <org>/<image>:<tag>)")
+    parser.add_option("-i", "--image", dest="image", help="image name (from <org>/<image>:<tag>)")
+    parser.add_option("-t", "--tag", dest="tag",  default="latest", help="tag (from <org>/<image>:<tag>)")
+    (options, args) = parser.parse_args()
 
+    getLayers(options.org, options.image, options.tag)
 

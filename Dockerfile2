@@ -1,0 +1,4 @@
+FROM lizrice/imagetest:accent
+MAINTAINER liz@lizrice.com
+
+LABEL com.label-schema.license='Apache2.0'
