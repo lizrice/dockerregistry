@@ -5,7 +5,7 @@
   service: childimage
   command: echo hello
 - name: dockerhub_push
-  service: demo
+  service: childimage
   type: push
   image_name: lizrice/childimage
   registry: https://index.docker.io/v1/
