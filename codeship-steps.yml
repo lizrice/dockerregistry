@@ -1,0 +1,3 @@
+- name: blah
+  service: imagetest
+  command: echo hello
