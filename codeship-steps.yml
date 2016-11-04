@@ -1,12 +1,9 @@
 - name: checkimagetest
   service: imagetest
   command: echo hello
-- name: checkchildimage
-  service: childimage
-  command: echo hello
 - name: dockerhub_push
-  service: childimage
+  service: imagetest
   type: push
-  image_name: lizrice/childimage
+  image_name: lizrice/imagetest
   registry: https://index.docker.io/v1/
   encrypted_dockercfg_path: dockercfg.encrypted  
