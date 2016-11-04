@@ -1,3 +1,6 @@
-- name: blah
+- name: checkimagetest
   service: imagetest
+  command: echo hello
+- name: checkchildimage
+  service: childimage
   command: echo hello
