@@ -6,3 +6,4 @@ Quick script for examining Docker registry v2 data
 
 The Dockerfiles are really just for experiments - don't expect them to do anything useful! 
  
+ ![](https://codeship.com/projects/182768/status?branch=master)
