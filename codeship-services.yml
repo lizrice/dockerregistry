@@ -2,4 +2,6 @@ imagetest:
   build:
     image: lizrice/imagetest
     dockerfile: Dockerfile
+    args: 
+      mybuildarg: 1
 
