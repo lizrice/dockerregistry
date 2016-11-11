@@ -2,4 +2,8 @@ imagetest:
   build:
     image: lizrice/imagetest
     dockerfile: Dockerfile
+childimage:
+  build:
+    image: lizrice/childimage
+    dockerfile: Dockerfile2
 
