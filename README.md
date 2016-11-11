@@ -4,7 +4,7 @@ Quick script for examining Docker registry v2 data. The Dockerfiles are really j
 
 ## Dockerfile - lizrice/imagetest
 
-[![](https://images.microbadger.com/badges/version/lizrice/imagetest.svg)](https://microbadger.com/images/lizrice/imagetest "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/lizrice/imagetest.svg)](https://microbadger.com/images/lizrice/imagetest "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/lizrice/imagetest.svg)](https://microbadger.com/images/lizrice/imagetest "Get your own image badge on microbadger.com") 
 
 
  
