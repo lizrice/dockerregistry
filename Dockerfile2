@@ -1,4 +1,5 @@
-FROM lizrice/imagetest:accent
+FROM lizrice/imagetest
 MAINTAINER liz@lizrice.com
 
-LABEL com.label-schema.license='Apache2.0'
+LABEL org.label-schema.license='Apache2.0' \
+      org.label-schema.name="childimage"
