@@ -9,3 +9,7 @@ Quick script for examining Docker registry v2 data. The Dockerfiles are really j
 ## Dockerfile2 - lizrice/childimage
 
 [![](https://images.microbadger.com/badges/version/lizrice/childimage.svg)](https://microbadger.com/images/lizrice/childimage "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/lizrice/childimage.svg)](https://microbadger.com/images/lizrice/childimage "Get your own image badge on microbadger.com") 
+
+## Dockerfile2 - lizrice/sameimage
+
+[![](https://images.microbadger.com/badges/image/lizrice/sameimage.svg)](https://microbadger.com/images/lizrice/sameimage "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/lizrice/sameimage.svg)](https://microbadger.com/images/lizrice/sameimage "Get your own version badge on microbadger.com")
